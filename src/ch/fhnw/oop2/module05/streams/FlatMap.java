@@ -26,7 +26,7 @@ public class FlatMap {
 			.map(word -> word.split(""))  // Liste von Arrays von Strings (warum nicht Methoden-Referenz?)
 			.flatMap(Arrays::stream)      // INHALT der Arrays in ein Stream von Strings
 			.map(String::toLowerCase)     // 19 -> 18, wegen Aa
-			.distinct()                   // Keine Dubletten
+			.distinct()                   // Keine Duplikate
 			.count();                     // Zählen
 		
 		// Für die Wörter wurden 18 Buchstaben aus dem Alphabet verwendet.

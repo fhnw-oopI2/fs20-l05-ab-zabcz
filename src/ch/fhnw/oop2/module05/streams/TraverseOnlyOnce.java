@@ -14,7 +14,8 @@ public class TraverseOnlyOnce {
 		
 		long n = stream.count();  // n = 4
 		System.out.println(n);
-		stream.forEach(System.out::println);
+
+		stream.forEach(System.out::println); // java.lang.IllegalStateException
 	}
 }
 

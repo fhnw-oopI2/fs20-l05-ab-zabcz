@@ -19,7 +19,7 @@ public class NoSideEffects {
 		print(collection);
 	}
 	
-	private static void print(List<?> list) {
+	private static void print(List<?> list) { // == List<Object>
 		System.out.println("----------------------");
 		for(Object o : list) {
 			System.out.println(o);
